@@ -1,0 +1,158 @@
+/* ----------- Base ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #333333;
+}
+
+/* ----------- Header ----------- */
+header {
+  background: #1a202c;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* ----------- Navigation ----------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+nav a {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+nav a:hover,
+nav a[aria-current="page"] {
+  background: #2d3748;
+}
+
+/* ----------- Main ----------- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #1a202c;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.3rem;
+}
+
+/* ----------- Lists ----------- */
+ul, ol {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+li {
+  margin: 0.4rem 0;
+}
+
+/* ----------- Forms (Contact) ----------- */
+form div {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font: inherit;
+}
+input:focus, textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+  box-shadow: 0 0 3px rgba(49,130,206,0.6);
+}
+button {
+  background: #1a202c;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #2d3748;
+}
+
+/* ----------- Table (CV) ----------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  padding: 0.8rem;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+th {
+  background: #1a202c;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+tr:nth-child(even) {
+  background: #f7fafc;
+}
+
+/* ----------- Footer ----------- */
+footer {
+  background: #f7fafc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+footer a {
+  color: #3182ce;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  section {
+    padding: 0.5rem;
+  }
+}
